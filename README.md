@@ -1,37 +1,37 @@
 # jwan-photo-poem-poster
 
-Jwan photo-and-illustration memory poster Skill with a short poetic caption below the image.
+A reusable Jwan visual Skill for turning one personal photo into a restrained photo-and-illustration memory poster.
 
-## Features
+Version: 1.1.0
 
-- Pair one supplied photo with one illustrated visual echo.
-- Preserve the subject's identity, pose, clothing cues, and emotional gesture.
-- Place a short Chinese caption below the image with an optional small English companion line.
-- Keep the final poster warm, tactile, calm, and suitable for social sharing.
+## What this Skill preserves
 
-## Case
+The upper area remains the factual source photo. The lower area becomes a smaller hand-drawn visual echo with generous negative space, optional subtle window/background context, small bilingual copy, and a bottom-right Jwan signature.
 
-![Case 01](examples/case-01.png)
+The Skill is intentionally strict about revision discipline: if the user asks to change only text size, illustration scale, background detail, or copy, unrelated visual elements should not drift.
 
-## Usage
+## Use
 
-Use `$jwan-photo-poem-poster` followed by one photo. Add a theme, exact caption, color preference, or aspect ratio when needed.
+Call $jwan-photo-poem-poster with one photo and, optionally, a theme or exact caption.
 
-Example:
+Examples:
 
-`$jwan-photo-poem-poster，保留照片主体，下面配一幅轻松的手绘插画，文字放在图下方。`
+- $jwan-photo-poem-poster，主题“我是小学生”，先给我3个短文案。
+- $jwan-photo-poem-poster，保留上半原片，下半插画缩小一点，增加一点窗景。
+- $jwan-photo-poem-poster，只把中文字体缩小，其他不要改。
 
-## Repository structure
+## Files
 
-- `SKILL.md` — complete Skill definition
-- `examples/` — generated case images
-- `README.md` — usage and project notes
-- `LICENSE` — MIT license
+- SKILL.md — full execution rules
+- TESTS.md — regression and quality checks
+- CHANGELOG.md — version history
+- examples/ — example briefs and public generated examples
+- LICENSE — MIT license
 
-## Source
+## Author / Contact
 
-This Skill is整理自 ChatGPT 项目“插画拼接图处理”中的聊天实践，由 Jwan 重新编写为可复用的公开 Skill。案例图为生成后的展示素材，不包含用户原始照片文件。
+Created and maintained by Jwan.
+GitHub: https://github.com/gongjuan96-crypto
+Catalog: https://github.com/gongjuan96-crypto/jwan-skills
 
-## License
-
-Released under the MIT License. See `LICENSE`.
+Please retain Jwan attribution when redistributing or adapting the Skill.
